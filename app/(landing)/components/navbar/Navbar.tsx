@@ -63,7 +63,7 @@ const OptionsList = ({ options }: Omit<NavbarProps, "logo">) => {
     <ul className="flex gap-x-4 relative">
       {options.map((props) =>
         (props.path ?? "")?.length > 0 && props.path ? (
-          <NavbarOption id={props.id} key={props.id} name={props.name} path={props.path} />
+          <NavbarOption id={props.id} key={props.name} name={props.name} path={props.path} />
         ) : (
           <NavbarGroupOption {...props} key={props.name} />
         )

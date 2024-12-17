@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
-import { FaHotel, FaTruck } from "react-icons/fa6";
+import { FaComputer, FaHotel, FaTruck } from "react-icons/fa6";
 import { IoIosCart } from "react-icons/io";
+import { FaHospital } from "react-icons/fa";
+import { MdElectricBolt } from "react-icons/md";
 
 type TechniqueContent = {
   name: string;
@@ -15,7 +17,7 @@ const Content = ({ technique }: { technique: string }) => {
   const techniques: TechniquesContents = {
     "tec-servicios-turisticos": {
       name: "Hoteleria y Turismo",
-      icon: <FaHotel className="techniques-hover-effect text-9xl" />,
+      icon: <FaHotel className="techniques-hover-effect text-[7.5rem]" />,
       content: {
         title: "Técnico en Servicios Turísticos",
         information: `La técnica de Hotelería y Turismo en el Politecnico Nuestra Señora del Perpetuo Socorro (PONSCA) es un programa académico que ofrece a los estudiantes una formación integral orientada a la industria de la hospitalidad y los viajes. Este técnico está diseñado para preparar a los jóvenes con las competencias necesarias para desenvolverse en un sector que demanda habilidades prácticas y teóricas en atención al cliente, administración de servicios y promoción del turismo local e internacional.
@@ -37,7 +39,7 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
     },
     "tec-logistica-transporte": {
       name: "Gestión Logística y Transporte",
-      icon: <FaTruck className="techniques-hover-effect text-[10rem]" />,
+      icon: <FaTruck className="techniques-hover-effect xl:text-[10rem] text-8xl" />,
       colors: {
         1: "#a955f7",
         2: "#9142db",
@@ -57,7 +59,7 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
     },
     "tec-comercio-mercadeo": {
       name: "Comercio y Mercardeo",
-      icon: <IoIosCart className="techniques-hover-effect text-[10rem]" />,
+      icon: <IoIosCart className="techniques-hover-effect xl:text-[10rem] text-8xl" />,
       colors: {
         1: "#ff8a39",
         3: "#f17f30",
@@ -76,16 +78,16 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
       },
     },
     "tec-desarollo-apps-informaticas": {
-      name: "Gestión Logística y Transporte",
-      icon: <FaTruck className="techniques-hover-effect text-[10rem]" />,
+      name: "Desarrollo de Aplicaciones Informáticas",
+      icon: <FaComputer className="techniques-hover-effect xl:text-[10rem] text-9xl" />,
       colors: {
-        1: "#a955f7",
-        2: "#9142db",
-        3: "#7d31c4",
-        4: "#5b1899",
+        1: "#151d2f",
+        2: "#111827",
+        3: "#0e1420",
+        4: "#06080e",
       },
       content: {
-        title: "Técnico en Gestión Logística y Transporte",
+        title: "Técnico en Desarrollo y Administración de Aplicaciones Informáticas",
         information: `La técnica de Logística en el Politecnico Nuestra Señora del Perpetuo Socorro (PONSCA) es un programa académico que brinda a los estudiantes las habilidades necesarias para enfrentar los retos de la gestión y distribución de bienes y servicios. Este programa se centra en preparar profesionales capacitados para optimizar procesos, mejorar la cadena de suministro y asegurar la eficiencia en las operaciones logísticas de empresas locales e internacionales.
 
         El plan de estudios incluye asignaturas claves como gestión de inventarios, transporte y distribución, almacenamiento, planificación logística y uso de herramientas tecnológicas. Estas materias permiten a los estudiantes desarrollar competencias en el manejo de sistemas logísticos, administración de recursos y toma de decisiones estratégicas para mejorar los flujos de trabajo en una organización.
@@ -96,16 +98,16 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
       },
     },
     "tec-enfermeria": {
-      name: "Gestión Logística y Transporte",
-      icon: <FaTruck className="techniques-hover-effect text-[10rem]" />,
+      name: " Enfermería",
+      icon: <FaHospital className="techniques-hover-effect xl:text-[9rem] text-8xl" />,
       colors: {
-        1: "#a955f7",
-        2: "#9142db",
-        3: "#7d31c4",
-        4: "#5b1899",
+        1: "#ff8dc8",
+        2: "#f472b6",
+        3: "#d84a93",
+        4: "#9d1c5e",
       },
       content: {
-        title: "Técnico en Gestión Logística y Transporte",
+        title: "Técnico en Cuidados de Enfermería y Promoción de la Salud",
         information: `La técnica de Logística en el Politecnico Nuestra Señora del Perpetuo Socorro (PONSCA) es un programa académico que brinda a los estudiantes las habilidades necesarias para enfrentar los retos de la gestión y distribución de bienes y servicios. Este programa se centra en preparar profesionales capacitados para optimizar procesos, mejorar la cadena de suministro y asegurar la eficiencia en las operaciones logísticas de empresas locales e internacionales.
 
         El plan de estudios incluye asignaturas claves como gestión de inventarios, transporte y distribución, almacenamiento, planificación logística y uso de herramientas tecnológicas. Estas materias permiten a los estudiantes desarrollar competencias en el manejo de sistemas logísticos, administración de recursos y toma de decisiones estratégicas para mejorar los flujos de trabajo en una organización.
@@ -116,16 +118,16 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
       },
     },
     "tec-administrativa-tributaria": {
-      name: "Gestión Logística y Transporte",
-      icon: <FaTruck className="techniques-hover-effect text-[10rem]" />,
+      name: "Gestión Administrativa y Tributaria",
+      icon: <FaTruck className="techniques-hover-effect xl:text-[10rem] text-8xl" />,
       colors: {
-        1: "#a955f7",
-        2: "#9142db",
-        3: "#7d31c4",
-        4: "#5b1899",
+        1: "#ff4497",
+        2: "#db2777",
+        3: "#b4175c",
+        4: "#860d42",
       },
       content: {
-        title: "Técnico en Gestión Logística y Transporte",
+        title: "Técnico en Gestión Administrativa y Tributaria",
         information: `La técnica de Logística en el Politecnico Nuestra Señora del Perpetuo Socorro (PONSCA) es un programa académico que brinda a los estudiantes las habilidades necesarias para enfrentar los retos de la gestión y distribución de bienes y servicios. Este programa se centra en preparar profesionales capacitados para optimizar procesos, mejorar la cadena de suministro y asegurar la eficiencia en las operaciones logísticas de empresas locales e internacionales.
 
         El plan de estudios incluye asignaturas claves como gestión de inventarios, transporte y distribución, almacenamiento, planificación logística y uso de herramientas tecnológicas. Estas materias permiten a los estudiantes desarrollar competencias en el manejo de sistemas logísticos, administración de recursos y toma de decisiones estratégicas para mejorar los flujos de trabajo en una organización.
@@ -136,16 +138,16 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
       },
     },
     "tec-instalaciones-electricas": {
-      name: "Gestión Logística y Transporte",
-      icon: <FaTruck className="techniques-hover-effect text-[10rem]" />,
+      name: "Instalaciones Eléctricas",
+      icon: <MdElectricBolt className="techniques-hover-effect xl:text-[10rem] text-8xl" />,
       colors: {
-        1: "#a955f7",
-        2: "#9142db",
-        3: "#7d31c4",
-        4: "#5b1899",
+        1: "#3171ff",
+        2: "#2563eb",
+        3: "#1047bf",
+        4: "#0d3489",
       },
       content: {
-        title: "Técnico en Gestión Logística y Transporte",
+        title: "Técnico en Instalaciones Eléctricas",
         information: `La técnica de Logística en el Politecnico Nuestra Señora del Perpetuo Socorro (PONSCA) es un programa académico que brinda a los estudiantes las habilidades necesarias para enfrentar los retos de la gestión y distribución de bienes y servicios. Este programa se centra en preparar profesionales capacitados para optimizar procesos, mejorar la cadena de suministro y asegurar la eficiencia en las operaciones logísticas de empresas locales e internacionales.
 
         El plan de estudios incluye asignaturas claves como gestión de inventarios, transporte y distribución, almacenamiento, planificación logística y uso de herramientas tecnológicas. Estas materias permiten a los estudiantes desarrollar competencias en el manejo de sistemas logísticos, administración de recursos y toma de decisiones estratégicas para mejorar los flujos de trabajo en una organización.
@@ -195,7 +197,9 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
         </svg>
 
         <div className="absolute top-[15vh] w-full  flex flex-col gap-14 justify-center items-center">
-          <h1 className="text-2xl lg:text-6xl font-bold">{techniqueSelected.name}</h1>
+          <h1 className="text-2xl xl:text-6xl font-bold mx-auto text-center">
+            {techniqueSelected.name}
+          </h1>
           {techniqueSelected.icon}
         </div>
       </div>
@@ -208,11 +212,9 @@ En el Politecnico Nuestra Señora del Perpetuo Socorro, la enseñanza de esta t�
 
           <div className="flex flex-col gap-4 text-justify">
             {techniqueSelected.content.information.split(/\r?\n/).map((pargraph, i) => (
-              <>
-                <p key={i} className="leading-7">
-                  {pargraph}
-                </p>
-              </>
+              <p key={i} className="leading-7">
+                {pargraph}
+              </p>
             ))}
           </div>
         </div>

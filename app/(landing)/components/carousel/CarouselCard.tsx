@@ -18,7 +18,7 @@ const CardCarousel = forwardRef<HTMLDivElement, CardCarouselProps>((props, ref) 
 
   button.showButton ??= true;
 
-  const containerStyle = `h-80 w-full lg:w-96  flex-shrink-0 rounded-2xl overflow-hidden 
+  const containerStyle = ` h-80 w-full sm:w-96  flex-shrink-0 rounded-2xl overflow-hidden 
          relative group transition-all ${isActive ? "" : "brightness-[.6] sm:brightness-100"}`;
 
   const imageStyle =

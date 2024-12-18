@@ -49,7 +49,7 @@ const GraduatesSlider = () => {
   ];
 
   return (
-    <div className="w-11/12 mx-auto grid gap-16">
+    <div className="w-11/12  mx-auto grid gap-16">
       <h2 className="ml-4 lg:ml-0 text-5xl lg:text-7xl text-white font-bold 5xl:mx-auto drop-shadow-md">
         Nuestros Egresados
       </h2>

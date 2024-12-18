@@ -42,13 +42,16 @@ const Carousel = ({
     });
   }, [carouselRef]);
 
-  const handleScrollTo = (index: number) => {
+  const handleScrollTo = (index: number, extraWidth?: number) => {
+    extraWidth ??= 0;
+    if (window.innerWidth < 500) extraWidth = 0;
+
     if (Array.isArray(scrollValue)) {
       carouselRef?.scrollTo({
-        left: index * scrollValue[index],
+        left: index * scrollValue[index] + extraWidth,
         behavior: "smooth",
       });
-      onScroll?.(index, index * scrollValue[index]);
+      onScroll?.(index, index * (scrollValue[index] + extraWidth));
       return;
     }
     carouselRef?.scrollTo({
@@ -66,7 +69,7 @@ const Carousel = ({
         const isTheLastSlide = index + 1 === maxLimit;
 
         if (!isTheLastSlide && showArrow.right) {
-          handleScrollTo(index + 1);
+          handleScrollTo(index + 1, 40);
           setIndex((prev) => prev + 1);
           return;
         }
@@ -82,7 +85,7 @@ const Carousel = ({
 
       if (isTheFirstSlide) {
         setIndex((prev) => prev - 1);
-        handleScrollTo(index - 1);
+        handleScrollTo(index - 1, -40);
       }
     } finally {
       setArrowDisabled(false);
@@ -93,7 +96,7 @@ const Carousel = ({
     <div className="w-full sm:w-[90vw] relative mx-auto 5xl:max-w-[90rem] ">
       <div
         ref={(ref) => setCarouselRef(ref)}
-        className="lg:gap-6 sm:px-4 flex overflow-hidden w-full sm:w-[90vw] 5xl:max-w-[90rem] rounded-xl"
+        className="sm:gap-6 sm:px-4 flex overflow-hidden w-full sm:w-[90vw] 5xl:max-w-[90rem] rounded-xl"
       >
         {showArrow.left ? (
           <CarouselArrow

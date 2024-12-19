@@ -132,7 +132,7 @@ export const NavbarGroupOptionContent = ({
       className={`  border absolute  ${
         isSubMenuOpen && optionHover === currentOptionSelected
           ? "opacity-100   top-[2.88rem] "
-          : "opacity-0 -top-6 -z-20 h-2 duration-150  "
+          : "opacity-0 -top-6 -z-40 h-2 duration-150 overflow-hidden "
       } bg-white rounded-b-xl  transition-all shadow-sm`}
       style={style}
     >

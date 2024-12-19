@@ -18,7 +18,7 @@ const useNavbar = () => {
   const generateMenuOption = (name: string, path: string, key?: string): NavbarOption => ({
     name,
     path,
-    key: key ?? path,
+    id: key ?? path,
   });
 
   const AcademicOfferOptions = [
@@ -60,42 +60,33 @@ const useNavbar = () => {
   ];
 
   const admissionsOptions = [
-    generateMenuOption("Requisistos de admision", "Pasos para inscribir", "Formulario de admision"),
-    generateMenuOption("Pasos para inscribir", "Pasos para inscribir", "Formulario de admision"),
-    generateMenuOption("Formulario de admision", "Pasos para inscribir", "Formulario de admision"),
+    generateMenuOption("Requisitos de admision", "/requisitos-admision"),
+    generateMenuOption("Pasos para inscribir", "/pasos-para-inscribir"),
+    generateMenuOption("Formulario de admision", "Formulario-de-admision"),
   ];
 
   const rightsAndResponsibilities = [
-    generateMenuOption(
-      "Derechos de los estudiantes",
-      "derechos-estudiantes",
-      "derechos-estudiantes"
-    ),
-    generateMenuOption("Deberes de los estudiantes", "deberes-estudiantes", "deberes-estudiantes"),
-    generateMenuOption("Deberes de los estudiantes", "deberes-estudiantes", "deberes-estudiantes"),
-    generateMenuOption("Aspecto religioso", "aspecto-religioso", "aspecto-religioso"),
-    generateMenuOption("Civismo", "civismo", "civismo"),
-    generateMenuOption("Uso de los uniformes", "uso-uniformes", "uso-uniformes"),
-    generateMenuOption(
-      "Apariencia de los estudiantes",
-      "apariencia-estudiantes",
-      "apariencia-estudiantes"
-    ),
+    generateMenuOption("Derechos de los estudiantes", "/derechos-estudiantes"),
+    generateMenuOption("Deberes de los estudiantes", "/deberes-estudiantes"),
+    generateMenuOption("Aspecto religioso", "/aspecto-religioso"),
+    generateMenuOption("Civismo", "/civismo"),
+    generateMenuOption("Uso de los uniformes", "/uso-uniformes"),
+    generateMenuOption("Apariencia de los estudiantes", "/apariencia-estudiantes"),
   ];
 
   const rulesOptions = [
-    generateMenuOption("Evaluaciones", "Evaluaciones"),
-    generateMenuOption("Aspectos conductuales", "aspectos-conductuales"),
-    generateMenuOption("Lo que no está permitido", "no-esta-permitido"),
-    generateMenuOption("El uso de aparatos electrónicos", "uso-de-aparatos-electronicos"),
-    generateMenuOption("Lo que está prohibido", "prohibido"),
-    generateMenuOption("Sanciones por incumplimiento", "sanciones"),
+    generateMenuOption("Evaluaciones", "/Evaluaciones"),
+    generateMenuOption("Aspectos conductuales", "/aspectos-conductuales"),
+    generateMenuOption("Lo que no está permitido", "/no-esta-permitido"),
+    generateMenuOption("El uso de aparatos electrónicos", "/uso-de-aparatos-electronicos"),
+    generateMenuOption("Lo que está prohibido", "/prohibido"),
+    generateMenuOption("Sanciones por incumplimiento", "/sanciones"),
   ];
 
   const InstitutionOptions = [
-    generateMenuOption("Misión, visión y valores", "mission-vission-values"),
-    generateMenuOption("Historia", "History"),
-    generateMenuOption("Equipo", "staff"),
+    generateMenuOption("Misión, visión y valores", "/mission-vission-values"),
+    generateMenuOption("Historia", "/History"),
+    generateMenuOption("Equipo", "/staff"),
   ];
 
   const logoImg =
@@ -104,7 +95,7 @@ const useNavbar = () => {
   const navbarOptions: NavbarOption[] = [
     {
       name: "Oferta Academica",
-      key: "oferta-academica",
+      id: "oferta-academica",
       children: (
         <NavbarGroupOptionContent
           currentOptionSelected="Oferta Academica"
@@ -134,7 +125,7 @@ const useNavbar = () => {
     },
     {
       name: "Admisiones",
-      key: "admisiones",
+      id: "admisiones",
       children: (
         <NavbarGroupOptionContent
           currentOptionSelected="Admisiones"
@@ -161,7 +152,7 @@ const useNavbar = () => {
     },
     {
       name: "Reglamentos",
-      key: "reglamentos",
+      id: "reglamentos",
       children: (
         <NavbarGroupOptionContent
           currentOptionSelected="Reglamentos"
@@ -191,10 +182,10 @@ const useNavbar = () => {
         </NavbarGroupOptionContent>
       ),
     },
-    { name: "Egresados", path: "/egresados", key: "egresados" },
+    { name: "Egresados", path: "/egresados", id: "egresados" },
     {
       name: "Nosotros",
-      key: "nosostros",
+      id: "nosostros",
       children: (
         <NavbarGroupOptionContent
           currentOptionSelected="Nosotros"

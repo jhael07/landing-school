@@ -2,7 +2,7 @@ import {
   NavbarGroupOptionContent,
   NavbarOption,
   SubMenuSectionTitle,
-} from "@/app/(landing)/components/navbar/Navbar";
+} from "@/app/(landing)/shared/components/navbar/Navbar";
 import useNavStore from "@/app/stores/NavStore";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";

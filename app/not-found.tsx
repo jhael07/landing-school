@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Navbar from "./(landing)/components/navbar/Navbar";
-import useNavbar from "./(landing)/hooks/useNavbar";
+import Navbar from "./(landing)/shared/components/navbar/Navbar";
+import useNavbar from "./(landing)/shared/hooks/useNavbar";
 import { BiSolidErrorAlt } from "react-icons/bi";
 
 const NotFound = () => {

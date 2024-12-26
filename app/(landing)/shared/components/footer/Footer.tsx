@@ -1,7 +1,7 @@
 import React from "react";
 import ImageSlider from "../ImageSlider";
 import useImageSlider from "../../hooks/useImageSlider";
-import { CarouselData } from "@/app/(landing)/types";
+import { CarouselData } from "@/app/(landing)/shared/types";
 
 const Footer = () => {
   const {

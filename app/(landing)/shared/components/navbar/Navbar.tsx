@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import useNavStore from "../../../stores/NavStore";
+import useNavStore from "../../../../stores/NavStore";
 import { HTMLAttributes, ReactNode } from "react";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa6";
 import Image from "next/image";

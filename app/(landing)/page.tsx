@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import TechniquesSection, { Technique } from "./components/TechniquesSection";
+import TechniquesSection, { Technique } from "./shared/components/TechniquesSection";
 import { FaComputer, FaHotel, FaSackDollar, FaTruck } from "react-icons/fa6";
-import AdmissionsSection from "./components/AdmissionsSection";
-import GraduatesSlider from "./components/GraduatesSlider";
-import useImageSlider from "./hooks/useImageSlider";
-import ImageSlider from "./components/ImageSlider";
-import NewsSlider from "./components/NewsSlider";
+import AdmissionsSection from "./shared/components/AdmissionsSection";
+import GraduatesSlider from "./shared/components/GraduatesSlider";
+import useImageSlider from "./shared/hooks/useImageSlider";
+import ImageSlider from "./shared/components/ImageSlider";
+import NewsSlider from "./shared/components/NewsSlider";
 import { MdElectricBolt } from "react-icons/md";
 import { FaHospital } from "react-icons/fa";
 import { IoIosCart } from "react-icons/io";
-import { CarouselData } from "./types";
+import { CarouselData } from "./shared/types";
 
 export default function Home() {
   const { handleScrollOnArrowClick, currIndex, sliderRef, handleScrollTo } = useImageSlider();

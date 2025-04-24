@@ -62,16 +62,13 @@ const useNavbar = () => {
   const admissionsOptions = [
     generateMenuOption("Requisitos de admision", "/requisitos-admision"),
     generateMenuOption("Pasos para inscribir", "/pasos-para-inscribir"),
-    generateMenuOption("Formulario de admision", "Formulario-de-admision"),
+    // generateMenuOption("Formulario de admision", "Formulario-de-admision"),
   ];
 
   const rightsAndResponsibilities = [
-    generateMenuOption("Derechos de los estudiantes", "/derechos-estudiantes"),
-    generateMenuOption("Deberes de los estudiantes", "/deberes-estudiantes"),
-    generateMenuOption("Aspecto religioso", "/aspecto-religioso"),
-    generateMenuOption("Civismo", "/civismo"),
-    generateMenuOption("Uso de los uniformes", "/uso-uniformes"),
-    generateMenuOption("Apariencia de los estudiantes", "/apariencia-estudiantes"),
+    generateMenuOption("Derechos y deberes de los estudiantes", "/derechos-y-deberes-estudiantes"),
+    generateMenuOption("Aspecto religioso y civismo", "/aspecto-religioso-y-civismo"),
+    generateMenuOption("Uso de los uniformes y apariencia de los estudiantes", "/uso-uniformes"),
   ];
 
   const rulesOptions = [
@@ -182,7 +179,7 @@ const useNavbar = () => {
         </NavbarGroupOptionContent>
       ),
     },
-    { name: "Egresados", path: "/egresados", id: "egresados" },
+    // { name: "Egresados", path: "/egresados", id: "egresados" },
     {
       name: "Nosotros",
       id: "nosostros",

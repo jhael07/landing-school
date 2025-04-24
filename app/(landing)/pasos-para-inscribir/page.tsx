@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
-const page = () => {
+export const metadata: Metadata = {
+  title: "Pasos para inscribirse",
+};
+
+export default function Page() {
   const steps = [
     "La admisión inicia en abril, con un formulario en la web y entrega de documentos requeridos.",
     "El estudiante debe realizar una serie de evaluaciones incluyen materias como español, matemática, sociales y naturales, además de la prueba C.A.P.A.",
@@ -26,10 +31,7 @@ const page = () => {
           <h1 className="text-4xl font-bold">Pasos para inscribir</h1>
           <div className="my-10 mx-auto flex-col flex w-full gap-10">
             {steps.map((item, i) => (
-              <div
-                key={item}
-                className="p-6 px-4 w-full border rounded-lg items-center flex gap-x-4"
-              >
+              <div key={i} className="p-6 px-4 w-full border rounded-lg items-center flex gap-x-4">
                 <h2 className="text-lg font-bold flex-shrink-0  w-10 h-10 items-center justify-center text-center bg-primary-600 flex rounded-full text-primary-950">
                   {i + 1}
                 </h2>
@@ -41,6 +43,4 @@ const page = () => {
       </div>
     </main>
   );
-};
-
-export default page;
+}

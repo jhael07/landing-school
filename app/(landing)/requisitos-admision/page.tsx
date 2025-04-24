@@ -1,5 +1,10 @@
 import Image from "next/image";
 import BasicList from "../shared/components/List/BasicList";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Requisitos de admisiones",
+};
 
 const page = () => {
   const requirements = [
@@ -23,7 +28,7 @@ const page = () => {
           fill
           alt="Student Admission"
           objectFit="cover"
-          className="object-center brightness-75"
+          className="object-center "
           src={
             "https://www.globalcareercounsellor.com/blog/wp-content/uploads/2022/02/College-admission-process-that-fits-you.jpg"
           }

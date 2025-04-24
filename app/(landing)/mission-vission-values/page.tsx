@@ -1,21 +1,7 @@
 import Image from "next/image";
-import BasicList from "../shared/components/List/BasicList";
+import InformationBlock from "../shared/components/InformationBlock";
 
 const page = () => {
-  const requirements = [
-    "ACTA DE NACIMIENTO ORIGINAL y Certificada dos copias.",
-    "Certificado original de conclusión de PRIMARIA, firmado y sellado por el DISTRITO EDUCATIVO correspondiente.",
-    "RÉCORD DE NOTAS ORIGINAL de 1er y 2do grado del Primer Ciclo del Nivel Secundario, con sus ACTAS DE CALIFICACIONES en original, todo firmado y sellado por el DISTRITO EDUCATIVO correspondiente.",
-    "Certificación de BUENA CONDUCTA del Centro Educativo de procedencia",
-    "Historial del SIGERD",
-    "2 fotos 2×2",
-    "Copia de cédula de los padres y/o tutores.",
-    "Copia del seguro médico del estudiante.",
-    "Certificado médico y tipo de sangre.",
-    "Copia del historial de vacuna infantil.",
-    "1 folder",
-  ];
-
   return (
     <main>
       <div className="w-full  h-[100vh] overflow-hidden top-0 fixed -z-10">
@@ -30,9 +16,31 @@ const page = () => {
         />
       </div>
       <div className="bg-white">
-        <div className="w-11/12 mx-auto  p-2 py-10 max-w-7xl mt-80 ">
-          <h1 className="text-4xl font-bold">Requisitos de admision</h1>
-          <BasicList items={requirements} />
+        <div className="w-11/12 mx-auto flex flex-col gap-3.5 p-2 py-10 max-w-7xl mt-80 ">
+          <h1 className="text-4xl font-bold">Mision</h1>
+          <InformationBlock
+            paragraphs={
+              "Somos una institución educativa que forma a sus estudiantes en un modelo integral, orientado al desarrollo de competencias técnicas profesionales de acuerdo a las normas de calidad"
+            }
+          />
+          <h1 className="text-4xl font-bold mt-5">Vision</h1>
+          <InformationBlock
+            paragraphs={
+              "Completar el proceso educativo con calidad y competencia para transformar la sociedad."
+            }
+          />
+          <h1 className="text-4xl font-bold mt-5">Valores</h1>
+          <InformationBlock
+            paragraphs={
+              "Los Valores son la base de la formación que damos en este Centro Educativo para entregar a la sociedad a personas integradas en todas sus dimensiones son los siguientes: Fe, Justicia, Respeto, Responsabilidad y Solidaridad."
+            }
+          />
+          <h1 className="text-4xl font-bold mt-5">Politica de calidad</h1>
+          <InformationBlock
+            paragraphs={
+              "En el Politécnico Nuestra Señora del Carmen (PONSCA) estamos comprometidos con la satisfacción de las necesidades y expectativas de nuestros grupos de interés, en particular los estudiantes, por medio de la mejora continua de nuestros procesos de gestión e inserción al mercado laboral"
+            }
+          />
         </div>
       </div>
     </main>

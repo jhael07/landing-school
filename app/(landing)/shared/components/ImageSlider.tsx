@@ -61,6 +61,7 @@ const SliderContent = ({ content, img }: CarouselData) => {
         fill
         quality={100}
         className="w-full h-full object-cover"
+        unoptimized
       />
     </div>
   );
